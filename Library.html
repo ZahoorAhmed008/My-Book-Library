@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="auth-buttons">
+            <a href="login.html"><button>Login</button></a>
+            <a href="signup.html"><button>Sign Up</button></a>
+        </div>
+        
+
+
+        
+        <h1>My Book Library</h1>
+        <button id="menuToggle" class="btn btn-primary">☰ Menu</button>
+    </header>
+
+      <aside id="sidebar" class="sidebar">
+        <button id="closeMenu" class="btn btn-danger">×</button>
+        <ul>
+            <li><a href="#" id="profileLink">Profile</a></li>
+            <li><a href="#" id="booksList">Books</a></li>
+            <li><a href="#" id="wishlistLink">Wishlist</a></li>
+            <li><a href="#" id="historyLink">Borrowing History</a></li>
+        </ul>
+    </aside>
+
+
+    <section class="search-bar">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="search-icon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for a book..." aria-label="Search" aria-describedby="search-icon">
+        </div>
+    </section>
+    
+
+    <section class="book-categories">
+        <h2>Categories</h2>
+        <select id="categorySelect" class="form-control">
+            <option value="all">All</option>
+            <option value="urdu-novels">Urdu Novels</option>
+            <option value="designing">Designing</option>
+            <option value="java-books">Java Books</option>
+            <option value="python-books">Python Books</option>
+            <option value="science-books">Science Books</option>
+            <option value="history-books">History Books</option>
+        </select>
+    </section>
+
+    
+    <div class="book-list" id="bookList">
+        <div class="book-item">
+            <img src="./Assets/Peer-e-Kamil.jpg" alt="Peer-e-Kamil" class="book-cover">
+            <h3>Peer-e-Kamil</h3>
+            <a href="./Assets/Peer-e-Kamil.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Udaas Naslain.jpg" alt="Udaas Naslain" class="book-cover">
+            <h3>Udaas Naslain</h3>
+            <a href="./Assets/Udaas-Naslain.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Shahab Nama.jpg" alt="Shahab Nama" class="book-cover">
+            <h3>Shahab Nama</h3>
+            <a href="./Assets/Shahab-Nama.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Aab-e-Hayat.jpg" alt="Aab-e-Hayat" class="book-cover">
+            <h3>Aab-e-Hayat</h3>
+            <a href="./Assets/Aab-e-Hayat.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Dil Tune Chura liya.jpg" alt="Dil Tune Chura liya" class="book-cover">
+            <h3>Aab-e-Hayat</h3>
+            <a href="./Assets/Dil Tune Chura liya.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/40 charagh Ishq ke.jpg" alt="Dil Tune Chura liya" class="book-cover">
+            <h3>Aab-e-Hayat</h3>
+            <a href="./Assets/40 charagh Ishq ke.pdf" target="_blank"><button >Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Meri Adhuri Prem Kahani.jpeg" alt="Dil Tune Chura liya" class="book-cover">
+            <h3>Aab-e-Hayat</h3>
+            <a href="./Assets/Meri Adhuri Prem Kahani.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Introduction-Java.jpeg" alt="Java: The Complete Reference" class="book-cover">
+            <h3>Java: The Complete Reference</h3>
+            <a href="./Assets/Java Text - Liang.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/jaav.jpg" alt="Effective Java" class="book-cover">
+            <h3>Effective Java</h3>
+            <a href="./Assets/Effective-Java.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Java2.jpg" alt="Head First Java" class="book-cover">
+            <h3>Advanced Java</h3>
+            <a href="./Assets/Effective-Java.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Python.jpg" alt="Python Beginers" class="book-cover">
+            <h3>Python Beginers</h3>
+            <a href="./Assets/Effective-Java.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Python2.jpg" alt="Learn Python" class="book-cover">
+            <h3>Learn Python</h3>
+            <a href="./Assets/Learn Python.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Fluent Python.jpg" alt="Fluent Python" class="book-cover">
+            <h3>Learn Python</h3>
+            <a href="./Assets/Fluent Python.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/A brief History of time.jpg" alt="A brief History of time" class="book-cover">
+            <h3>A brief History of Time</h3>
+            <a href="./Assets/stephen_hawking_a_brief_history_of_time.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Selfish Gene.jpeg" alt="The Selfish Gene" class="book-cover">
+            <h3>Learn Python</h3>
+            <a href="./Assets/The-Selfish-Gene-R.-Dawkins-1976-WW-.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/The Origin of Species.jpg" alt="The Selfish Gene" class="book-cover">
+            <h3>Learn Python</h3>
+            <a href="./Assets/The-Selfish-Gene-R.-Dawkins-1976-WW-.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/Guns-Germs-and-Steel.jpeg" alt="The Selfish Gene" class="book-cover">
+            <h3>Learn Python</h3>
+            <a href="./Assets/The-Selfish-Gene-R.-Dawkins-1976-WW-.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+        <div class="book-item">
+            <img src="./Assets/The-History-of-the-Ancient-World.jpg" alt="The Selfish Gene" class="book-cover">
+            <h3>Learn Python</h3>
+            <a href="./Assets/The-Selfish-Gene-R.-Dawkins-1976-WW-.pdf" target="_blank"><button>Read Book</button></a>
+        </div>
+       
+    </div>
+    
+    
+
+    <section class="borrowing-history">
+        <h2>
+            Borrowing History
+            <button id="clearHistory" class="btn btn-danger">Clear History</button>
+        </h2>
+        <ul id="historyList">
+           
+        </ul>
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+
+    
+</body>
+</html>
